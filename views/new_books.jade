@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+  form(method="POST", action="/books")
+    input(type="text", name="name", placeholder="Name")
+    input(type="number", name="total", placeholder="Total")
+    input(type="text", name="author", placeholder="Author")
+    select(name="authorId")
+      option(value="1") Author
+      option(value="2") Author2
+    button(type="submit") Create
